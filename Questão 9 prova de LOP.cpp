@@ -22,7 +22,7 @@ int main() {
     for (int i = 0; i < 3; i++) {
         printf("\nDigite os dados do aluno %d:\n", i + 1);
         printf("Nome:\n");
-        scanf(" %[^\n}", alunos[i].nome); 
+        scanf(" %[^\n]", alunos[i].nome); 
         printf("Idade:\n");
         scanf("%d", &alunos[i].idade);
         printf("Nota:\n");
