@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 struct Produto {
     char nome[50];
@@ -10,9 +9,7 @@ struct Produto {
 struct Produto produto;
 
 void cadastrarProduto() {
-	printf("\033[32m");
     printf("---Cadastro de Produto---\n");
-    printf("\033[0m");
     printf("Nome do produto: ");
     scanf(" %[^\n]", produto.nome); 
     printf("Preco do produto: ");
@@ -24,9 +21,7 @@ void cadastrarProduto() {
 }
 
 void visualizarProduto() {
-	printf("\033[33m");
     printf("---Informacoes do Produto---\n");
-    printf("\033[0m");
     printf("Nome: %s\n", produto.nome);
     printf("Preco: R$ %.2f\n", produto.preco);
     printf("Quantidade em estoque: %d\n", produto.quantidade);
@@ -34,9 +29,7 @@ void visualizarProduto() {
    
 void realizarCompra() {
     int qtdcompra;
-    printf("\033[31m");
     printf("---Compra de produto---\n");
-    printf("\033[0m");
     printf("Quantidade a comprar: ");
     scanf("%d", &qtdcompra);
 
